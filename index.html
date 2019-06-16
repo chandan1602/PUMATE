@@ -5,15 +5,15 @@
     <title>
       PUMATE
     </title>
-    <link rel="stylesheet" href="stylehome.css">
+    <link rel="stylesheet" href="css/stylehome.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
+
   <body>
     <div class="brand" style="text-align: center;">
 <h1>PUMATE</h1>
     </div>
-
-
+    
     <section>
       <div class="container">
         <div class="carousel" style="background-color: rgba(0,0,0,0.7); color: #fff; padding: 150px 100px;">
@@ -29,10 +29,11 @@
   <div class="col-lg-6 col-sm-12">
     <h1>Students</h1>
 
-    <div class="form-group" name="jump">
+    <form name="pumateCollegeForm">
+    <div class="form-group">
       <label for="College">College: </label>
-      <select onchange="gotoPage(this)" class="form-control form-control-lg"
-        id="College" name="menu">
+      <select onchange="gotoPageSelect(this)" class="form-control form-control-lg"
+        id="College" name="pumateCollegeSelect">
         <option value="#" disabled selected>Select your College</option>
         <option value="html/puchd.html">Panjab University SSG Regional Center</option>
         <option value="Sorry! This Feature is in Development. It will be Coming Soon!!">UIET, Chandigarh</option>
@@ -40,19 +41,25 @@
         <option value="Sorry! This Feature is in Development. It will be Coming Soon!!">UICET, Chandigarh</option>
       </select>
     </div>
+    <!-- </form> -->
+
+        <!-- <form name="pumateStreamForm"> -->
         <div class="form-group">
           <label for="Stream">Stream: </label>
-          <select class="form-control" id="Stream">
+          <select name="pumateStreamSelect" class="form-control" id="Stream">
             <option value="#" disabled selected>Select your Stream</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
+            <option>Computer Science Engineering</option>
+            <option>Electronics and Communication Engineering</option>
+            <option>Mechanical Engineering</option>
+            <option>Information Technology</option>
           </select>
         </div>
+        <!-- </form> -->
+
+        <!-- <form name="pumateSemesterForm"> -->
         <div class="form-group">
           <label for="Semester">Semester: </label>
-          <select class="form-control" id="Semester">
+          <select name="pumateSemesterSelect" class="form-control" id="Semester">
             <option value="#" disabled selected>Select your Semester</option>
             <option>1</option>
             <option>2</option>
@@ -65,8 +72,15 @@
 
           </select>
         </div>
+        <!-- <script>
+          var arr=[document.pumateCollegeForm.pumateCollegeSelect, document.pumateStreamForm.pumateStreamSelect,
+          document.pumateSemesterForm.pumateSemsterSelect];
+          var arrString = arr.toString();
+          </script> -->
         <button type="submit" class="btn btn-success"
-          onClick="location=document.jump.menu.options[document.jump.menu.selectedIndex].value;">Continue</button>
+          onClick="return gotoPage(this.form)">Continue</button>
+        </form>
+
 
   </div>
   <div class="col-lg-6 col-sm-12">
