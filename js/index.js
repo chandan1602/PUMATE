@@ -168,15 +168,12 @@ function gotoPage(oForm) {
 
 
     else {
-        alert('This Selection is not Available! We are Working on it!!');
+        alert('This Selection is not Available!');
     }
 }
 
-    // (select.selectedIndex === 1) ? (window.location = "html/pussgrc.html") : (alert(select.options[select.selectedIndex].value))
-// }
-
 function gotoPageSelect(select) {
     if(select.selectedIndex !== 1) {
-        alert(select.options[select.selectedIndex].value);
+        alert('Sorry! This Feature is in Development. It will be Coming Soon!!');
     }
 }
