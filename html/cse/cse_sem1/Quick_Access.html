@@ -6,16 +6,16 @@
     <title>
         Home
     </title>
-    <link rel="stylesheet" href="../css/stylehome.css">
+    <link rel="stylesheet" href="../../../css/stylehome.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-
+<meta charset="UTF-8">
     <!--Navbar Starts-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="../index.html">PUMATE</a>
+        <a class="navbar-brand" href="../../../index.html">PUMATE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#" onclick="goBack()">HOME <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./cse_sem1.html">HOME <span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -41,14 +41,14 @@
                         ACADEMICS
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="ques_papers.html">Question Papers</a>
-                        <a class="dropdown-item" href="#">Syllabus</a>
-                        <a class="dropdown-item" href="#">Workshop Content</a>
-                    </div>
-                </li>
+                            <a class="dropdown-item" href="./qp_cse_sem1.html#pu_ques_papers">Question Papers</a>
+                            <a class="dropdown-item" href="./qp_cse_sem1.html#pu_syllabus">Syllabus</a>
+                            <a class="dropdown-item" href="./qp_cse_sem1.html#pu_workshops">Workshop Content</a>
+                        </div>
+            </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">TECH-CHAT</a>
+                    <a class="nav-link" href="./chat_cse_sem1.html">TECH-CHAT</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -57,9 +57,9 @@
                         MORE
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Faculty</a>
-                        <a class="dropdown-item" href="#">Commities</a>
-                        <a class="dropdown-item" href="#">Enterpreneurs</a>
+                        <a class="dropdown-item" href="./pu_faculty.html">Faculty</a>
+                        <a class="dropdown-item" href="./pu_commities.html">Commities</a>
+                        <a class="dropdown-item" href="./pu_enterpreneurs.html">Enterpreneurs</a>
                     </div>
                 </li>
 
@@ -70,12 +70,6 @@
             </ul>
         </div>
     </nav>
-    <script>
-    function goBack() {
-        window.history.back();
-    }
-    </script>
-
     <!-- Navbar ends -->
 
     <!-- Linking starts of vertical nav-->

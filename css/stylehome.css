@@ -6,3 +6,26 @@ footer {
     left: 0;
     right: 0;
 }
+
+/*Styling cards=> adding hover effect => centralising them*/
+#shor:hover,
+#yantrix:hover,
+#tpc:hover,
+#ncc:hover,
+#nss:hover {
+    z-index: 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+/*ending styling cards*/
+
+/*sticky-nav*/
+.pu_navbar{
+    position: sticky;
+    top: 1px;
+}
