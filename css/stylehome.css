@@ -29,3 +29,14 @@ footer {
     position: sticky;
     top: 1px;
 }
+
+/* Styling Faculty */
+.faculty h1{
+    font-size: 50px;
+}
+
+.faculty:hover,
+.students:hover{
+    z-index: 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
