@@ -1,4 +1,15 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: #D3D3D3 !important;
+    margin: 0 0 100px;
+}
+
 footer {
+    position: absolute;
     padding: 15px auto 15px auto;
     text-align: center;
     color: #fff;
@@ -6,6 +17,7 @@ footer {
     width: 100%;
     left: 0;
     right: 0;
+    bottom: 0;
 }
 
 /*Styling cards=> adding hover effect => centralising them*/

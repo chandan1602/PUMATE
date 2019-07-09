@@ -80,16 +80,16 @@
                 <div class="gap"><br><br><br></div>
                 <ul style="list-style: none;" class="nav flex-column" id="myTab1">
 
-                    <li class="nav-item"><a href="#vision NIa" class="nav-link active size"
-                            onclick="visionFunctionality()">Complain</a></li>
-                    <li class="nav-item"><a href="#mission NIa" class="nav-link size"
-                            onclick="missionFunctionality()">Timetable</a></li>
-                    <li class="nav-item"><a href="#belief NIa" class="nav-link size"
-                            onclick="beliefFunctionality()">Result</a></li>
-                    <li class="nav-item"><a href="#collab NIa" class="nav-link size"
-                            onclick="collabFunctionality()">Notice Board</a></li>
-                    <li class="nav-item"><a href="#funding NIa" class="nav-link size"
-                            onclick="fundingFunctionality()">Donations</a></li>
+                    <li class="nav-item"><a href="#PU_Timetable NIa" class="nav-link active size"
+                            onclick="TimetableFunctionality()">TimeTable</a></li>
+                    <li class="nav-item"><a href="#PU_Result NIa" class="nav-link size"
+                            onclick="ResultFunctionality()">Result</a></li>
+                    <li class="nav-item"><a href="#PU_Notice_Board NIa" class="nav-link size"
+                            onclick="NoticeFunctionality()">Notice Board</a></li>
+                    <li class="nav-item"><a href="#PU_Donate NIa" class="nav-link size"
+                            onclick="DonateFunctionality()">Donate</a></li>
+                    <li class="nav-item"><a href="#PUMATE_Policy NIa" class="nav-link size"
+                            onclick="PUMATEPrivacyFunctionality()">Privacy Policy</a></li>
                 </ul>
 
                 <style>
@@ -120,11 +120,11 @@
             </div>
 
             <div class="col-lg-9">
-                <div class="visibility" id="vision" style="display:block;">
+                <div class="visibility" id="PU_Timetable" style="display:block;">
                     <div class="gap"><br><br></div>
                     <div class="container" style="width: 75%;">
                         <div class="jumbotron">
-                            <h2>VISION</h2>
+                            <h2>TIMETABLE</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -133,11 +133,48 @@
                     </div>
                 </div>
 
-                <div class="visibility active" id="mission" style="display:none;">
+                <div class="visibility active" id="PU_Result" style="display:none;">
                     <div class="gap"><br><br></div>
                     <div class="container" style="width: 75%;">
                         <div class="jumbotron">
-                            <h2>MISSION</h2>
+                            <h2>RESULT</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+
+                                   <form action="http://eakadamik.in/uiethsp/" method="get" target="_blank">
+                                       <button type="submit" class="btn btn-primary btn-lg" role="button">Get Result</button>
+                                   </form>
+
+                                  <!-- <button type="button" class="btn btn-primary btn-lg" role="button">Get Result</button> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="visibility" id="PU_Notice_Board" style="display:none;">
+                    <div class="gap"><br><br></div>
+                    <div class="container" style="width: 75%;">
+                        <div class="jumbotron">
+                            <h2>NOTICE BOARD</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                                    <form action="http://ssgpurch.puchd.ac.in/show-noticeboard.php?nbid=1" method="get" target="_blank">
+                                       <button type="submit" class="btn btn-primary btn-lg" role="button">Go Now</button>
+                                    </form>
+
+                                    <!-- <button type="button" class="btn btn-primary btn-lg" href="#" role="button">Go Now</button> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div id="PU_Donate" style="display:none;">
+                    <div class="gap"><br><br></div>
+                    <div class="container" style="width: 75%;">
+                        <div class="jumbotron">
+                            <h2>DONATE</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -146,37 +183,11 @@
                     </div>
                 </div>
 
-                <div class="visibility" id="belief" style="display:none;">
+                <div class="visibility" id="PUMATE_Policy" style="display:none;">
                     <div class="gap"><br><br></div>
                     <div class="container" style="width: 75%;">
                         <div class="jumbotron">
-                            <h2>BELIEF</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="collab" style="display:none;">
-                    <div class="gap"><br><br></div>
-                    <div class="container" style="width: 75%;">
-                        <div class="jumbotron">
-                            <h2>COLLABORATIONS</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="visibility" id="funding" style="display:none;">
-                    <div class="gap"><br><br></div>
-                    <div class="container" style="width: 75%;">
-                        <div class="jumbotron">
-                            <h2>FUNDING</h2>
+                            <h2>PRIVACY POLICY</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -195,45 +206,45 @@
 
 
     <script>
-        function collabFunctionality() {
-            var lefts = document.querySelectorAll("#vision, #mission, #belief, #funding");
-            document.getElementById("collab").style.display = "block";
+        function TimetableFunctionality() {
+            var lefts = document.querySelectorAll("#PU_Result, #PU_Notice_Board, #PU_Donate, #PUMATE_Policy");
+            document.getElementById("PU_Timetable").style.display = "block";
             var length = lefts.length;
             for (var i = 0; i < length; i++) {
                 lefts[i].style.display = "none";
             }
         }
 
-        function visionFunctionality() {
-            var lefts = document.querySelectorAll("#collab, #mission, #belief, #funding");
-            document.getElementById("vision").style.display = "block";
+        function ResultFunctionality() {
+            var lefts = document.querySelectorAll("#PU_Timetable, #PU_Notice_Board, #PU_Donate, #PUMATE_Policy");
+            document.getElementById("PU_Result").style.display = "block";
             var length = lefts.length;
             for (var i = 0; i < length; i++) {
                 lefts[i].style.display = "none";
             }
         }
 
-        function missionFunctionality() {
-            var lefts = document.querySelectorAll("#collab, #vision, #belief, #funding");
-            document.getElementById("mission").style.display = "block";
+        function NoticeFunctionality() {
+            var lefts = document.querySelectorAll("#PU_Timetable, #PU_Result, #PU_Donate, #PUMATE_Policy");
+            document.getElementById("PU_Notice_Board").style.display = "block";
             var length = lefts.length;
             for (var i = 0; i < length; i++) {
                 lefts[i].style.display = "none";
             }
         }
 
-        function beliefFunctionality() {
-            var lefts = document.querySelectorAll("#collab, #vision, #mission, #funding");
-            document.getElementById("belief").style.display = "block";
+        function DonateFunctionality() {
+            var lefts = document.querySelectorAll("#PU_Timetable, #PU_Result, #PU_Notice_Board, #PUMATE_Policy");
+            document.getElementById("PU_Donate").style.display = "block";
             var length = lefts.length;
             for (var i = 0; i < length; i++) {
                 lefts[i].style.display = "none";
             }
         }
 
-        function fundingFunctionality() {
-            var lefts = document.querySelectorAll("#collab, #vision, #mission, #belief");
-            document.getElementById("funding").style.display = "block";
+        function PUMATEPrivacyFunctionality() {
+            var lefts = document.querySelectorAll("#PU_Timetable, #PU_Result, #PU_Notice_Board, #PU_Donate");
+            document.getElementById("PUMATE_Policy").style.display = "block";
             var length = lefts.length;
             for (var i = 0; i < length; i++) {
                 lefts[i].style.display = "none";
