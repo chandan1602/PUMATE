@@ -71,8 +71,101 @@
 
 <!-- Navbar ends -->
 
+<!--body starts-->
+<br>
+<div class="container">
+    <h1>UPCOMING EVENTS</h1>
+    <hr align="left" width="50%">
+<div class="row">
+    <div class="col-lg-4">
+        <div class="jumbotron pu_event">
+            <img src="./../../../img/library.jpg" alt="event_name">                 
+        </div><!--jumbo ends-->
+    </div><!--first grid ends-->
+    <div class="col-lg-4">
+        <div class="jumbotron pu_event">
+            <img src="./../../../img/library.jpg" alt="event_name">
+        </div>
+        <!--jumbo ends-->
+    </div><!--second div ends-->
+    <div class="col-lg-4">
+        <div class="jumbotron pu_event">
+            <img src="./../../../img/library.jpg" alt="event_name">
+        </div>
+        <!--jumbo ends-->
+    </div><!--third div ends-->
+</div><!--row 1 ends-->
+
+<div class="row">
+    <div class="col-lg-4">
+        <div class="jumbotron pu_event">
+            <img src="./../../../img/library.jpg" alt="event_name">
+        </div>
+    </div>
+    <!--first grid ends-->
+    <div class="col-lg-4">
+        <div class="jumbotron pu_event">
+            <img src="./../../../img/library.jpg" alt="event_name">
+        </div>
+    </div>
+    <!--second div ends-->
+    <div class="col-lg-4">
+        <div class="jumbotron pu_event">
+            <img src="./../../../img/library.jpg" alt="event_name">
+        </div>
+    </div>
+    <!--third div ends-->
+</div>
+<!--row 2 ends-->
+
+    <h1>OLDER EVENTS</h1>
+    <hr align="left" width="50%">
+
+<div class="row">
+    <div class="col-lg-4">
+        <div class="jumbotron pu_event">
+            <img src="./../../../img/library.jpg" alt="event_name">
+        </div>
+    </div>
+    <!--first grid ends-->
+    <div class="col-lg-4">
+        <div class="jumbotron pu_event">
+            <img src="./../../../img/library.jpg" alt="event_name">
+        </div>
+    </div>
+    <!--second div ends-->
+    <div class="col-lg-4">
+        <div class="jumbotron pu_event">
+            <img src="./../../../img/library.jpg" alt="event_name">
+        </div>
+    </div>
+    <!--third div ends-->
+</div>
+<!--row 3 ends-->
 
 
+</div><!--body container ends-->
+<!--body ends-->
+<style>
+
+.pu_event {
+height: 300px; /* Modify this according to your need */
+overflow: hidden; /* Removing this will break the effects */
+}
+
+/* Slow-motion Zoom Container */
+.pu_event img {
+transform-origin: 50% 65%;
+transition: transform 5s, filter 3s ease-in-out;
+filter: brightness(150%);
+}
+
+/* The Transformation */
+.pu_event:hover img {
+filter: brightness(100%);
+transform: scale(3);
+}
+</style>
 
 
 <!--Footer-->
