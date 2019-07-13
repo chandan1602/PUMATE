@@ -20,17 +20,20 @@ footer {
     bottom: 0;
 }
 
-/*Styling cards=> adding hover effect => centralising them*/
+/* Styling cards=> adding hover effect => centralising them*/
 #shor:hover,
 #yantrix:hover,
 #tpc:hover,
 #ncc:hover,
-#nss:hover,
-.faculty:hover,
-.students:hover,
-.pu_event:hover {
+#nss:hover {
     z-index: 2;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.jumbotron:hover {
+    z-index: 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card {
