@@ -104,7 +104,7 @@
                             onclick="ResultFunctionality()">Result</a></li>
                     <li class="nav-item"><a href="#PU_Notice_Board NIa" class="nav-link size"
                             onclick="NoticeFunctionality()">Notice Board</a></li>
-                    <li class="nav-item"><a href="#PU_Donate NIa" class="nav-link size"
+                    <li class="nav-item"><a href="#PU_Donate NIa" id="mainTarget" class="nav-link size"
                             onclick="DonateFunctionality()">Donate</a></li>
                     <li class="nav-item"><a href="#PUMATE_Policy NIa" class="nav-link size"
                             onclick="PUMATEPrivacyFunctionality()">Privacy Policy</a></li>
@@ -116,7 +116,6 @@
                         border-radius: 5px;
                         padding: 5px inherit 5px 5px;
                         border: 1px solid #a6a5a4;
-                    WARRANTIES, WHETHER EXPRESS OR IMPLIED, INCLUDING THE IMPLIED WARRANTIES
                         color: #fd3300;
                     }
 
@@ -135,22 +134,15 @@
                         color: #760972;
                     }
                 </style>
-
-
-            
-
             </div>
 
             <div class="col-lg-9">
                 <div class="visibility" id="PU_Timetable" style="display:block;">
                     <div class="gap"><br><br></div>
                     <div class="container" style="width: 75%;">
-                        <div class="jumbotron">
-                            <h2>TIMETABLE</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p>
+                        <div class="jumbotron PU_Timetable">
+                            <img src="./../../../img/timetable_csesem3.jpeg" alt="timtable">
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -163,7 +155,6 @@
                             <p>By clicking on the Link given below, you will be redirected to the page where you will be shown your result.
                                 Best of Luck, may you achieve high ranking positions in your life.
                             </p>
-
                                    <form action="http://eakadamik.in/uiethsp/" method="get" target="_blank">
                                        <button type="submit" class="btn btn-primary btn-lg" role="button">Get Result</button>
                                    </form>
@@ -521,11 +512,32 @@
         background-size: cover;
         background-attachment: fixed;
     }
+
+    .PU_Timetable {
+    position: relative;
+    /* overflow: hidden; */
+    height: 20rem;
+    }
+
+    .PU_Timetable img {
+    position: absolute;
+    z-index: 1;
+    /* top: 0; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    /* object-fit is not supported on IE */
+    object-fit: cover;
+    opacity: 1;
+    }
+
     </style>
 
 
-    <script>
-        function TimetableFunctionality() {
+<!--Linking ends of vertical nav-->
+    <script type="text/javascript">
+     TimetableFunctionality = () => {
             var lefts = document.querySelectorAll("#PU_Result, #PU_Notice_Board, #PU_Donate, #PUMATE_Policy");
             document.getElementById("PU_Timetable").style.display = "block";
             var length = lefts.length;
@@ -534,7 +546,7 @@
             }
         }
 
-        function ResultFunctionality() {
+        ResultFunctionality = () => {
             var lefts = document.querySelectorAll("#PU_Timetable, #PU_Notice_Board, #PU_Donate, #PUMATE_Policy");
             document.getElementById("PU_Result").style.display = "block";
             var length = lefts.length;
@@ -543,7 +555,7 @@
             }
         }
 
-        function NoticeFunctionality() {
+        NoticeFunctionality = () => {
             var lefts = document.querySelectorAll("#PU_Timetable, #PU_Result, #PU_Donate, #PUMATE_Policy");
             document.getElementById("PU_Notice_Board").style.display = "block";
             var length = lefts.length;
@@ -552,7 +564,7 @@
             }
         }
 
-        function DonateFunctionality() {
+        DonateFunctionality = () => {
             var lefts = document.querySelectorAll("#PU_Timetable, #PU_Result, #PU_Notice_Board, #PUMATE_Policy");
             document.getElementById("PU_Donate").style.display = "block";
             var length = lefts.length;
@@ -561,7 +573,7 @@
             }
         }
 
-        function PUMATEPrivacyFunctionality() {
+        PUMATEPrivacyFunctionality = () => {
             var lefts = document.querySelectorAll("#PU_Timetable, #PU_Result, #PU_Notice_Board, #PU_Donate");
             document.getElementById("PUMATE_Policy").style.display = "block";
             var length = lefts.length;
@@ -569,8 +581,8 @@
                 lefts[i].style.display = "none";
             }
         }
+
     </script>
-<!--Linking ends of vertical nav-->
 
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
