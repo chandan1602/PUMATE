@@ -139,13 +139,83 @@
             <div class="col-lg-9">
                 <div class="visibility" id="PU_Timetable" style="display:block;">
                     <div class="gap"><br><br></div>
-                    <div class="container" style="width: 75%;">
+                    <div class="container">
                         <div class="jumbotron PU_Timetable">
-                            <img src="./../../../img/timetable_csesem3.jpeg" alt="timtable">
-                        </div>
+                            <h1>YOUR TIMETABLE</h1>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">TIME</th>
+                                        <th scope="col">MONDAY</th>
+                                        <th scope="col">TUESDAY</th>
+                                        <th scope="col">WEDNESDAY</th>
+                                        <th scope="col">THURSDAY</th>
+                                        <th scope="col">FRIDAY</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">9:00-10:00</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">10:00-11:00</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">11:00-12:00</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">12:00-13:00</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">13:00-14:00</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">14:00-15:00</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">15:00-16:00</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">16:00-17:00</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
+                
 
                 <div class="visibility active" id="PU_Result" style="display:none;">
                     <div class="gap"><br><br></div>
@@ -164,6 +234,7 @@
                     </div>
                 </div>
 
+                
                 <div class="visibility" id="PU_Notice_Board" style="display:none;">
                     <div class="gap"><br><br></div>
                     <div class="container" style="width: 75%;">
@@ -180,6 +251,7 @@
                         </div>
                     </div>
                 </div>
+            
 
                 <div id="PU_Donate" style="display:none;">
                     <div class="gap"><br><br></div>
@@ -513,24 +585,21 @@
         background-attachment: fixed;
     }
 
-    .PU_Timetable {
+    /* .PU_Timetable {
     position: relative;
-    /* overflow: hidden; */
     height: 20rem;
     }
 
     .PU_Timetable img {
     position: absolute;
     z-index: 1;
-    /* top: 0; */
     left: 0;
     bottom: 0;
     width: 100%;
     height: 100%;
-    /* object-fit is not supported on IE */
     object-fit: cover;
     opacity: 1;
-    }
+    } */
 
     </style>
 
@@ -598,3 +667,5 @@
 </body>
 
 </html>
+
+

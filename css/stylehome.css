@@ -49,16 +49,56 @@ footer {
     top: 1px;
 }
 
-/* .faculty {
-    background-color: lightblue;
+/*fixing committies and enterpreneurs page*/
+/********************************************/
+.cards .jumbotron .clearfix img {
+    height: 28rem;
+    width: 30rem;
+    border: 1px solid transparent;
+    padding: 0px 30px 30px 30px;
+}
+.cards .jumbotron  {
+    font-size: 130%;
+    background: linear-gradient(to right, #000 0%, #fff 90%);
+    border: 10px solid #000;
+}
+.clearfix {
+    padding: 15px 30px 30px 30px;
 }
 
-.students {
-    background-color: lightgoldenrodyellow;
+/*********************************************/
+.cards .shor .jumbotron {
+    background: linear-gradient(to right, #D1E1EF 0%, #EED8A7 100%);
+    border: none;
 }
 
-.faculty .jumbotron,
-.students .jumbotron{
-    max-width: 500px;
-} */
+.cards .yantrix .jumbotron {
+    background: linear-gradient(to right, #6EC0FF 0%, #fff 100%);
+    border: none;
+}
+
+.cards .tpc .jumbotron {
+    background: linear-gradient(to right, #B6B6B6 0%, #fff 100%);
+    border: none;
+}
+
+.cards .dcult .jumbotron {
+    background: linear-gradient(to right, #EFC305 0%, #fff 100%);
+    border: none;
+}
+
+.cards .literati .jumbotron {
+    background: linear-gradient(to right,#fff 50%, #B9A73A 100%);
+    border: none;
+}
+
+.cards .ncc .jumbotron {
+    background: linear-gradient(to right, #BBB47F 0%, #fff 100%);
+    border: none;
+}
+
+.cards .nss .jumbotron {
+    background: linear-gradient(to right, #fff 50%, #22A7F2 100%);
+    border: none;
+}
 
