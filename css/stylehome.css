@@ -60,7 +60,7 @@ footer {
 .cards .jumbotron  {
     font-size: 130%;
     background: linear-gradient(to right, #000 0%, #fff 90%);
-    border: 10px solid #000;
+    /* border: 10px solid #000; */
 }
 .clearfix {
     padding: 15px 30px 30px 30px;
