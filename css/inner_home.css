@@ -160,7 +160,7 @@
 
 /* Style the back side */
 .flip-box-x-back {
-    background-color: transparent;
+    background-color: #343635;
     color: white;
     transform: rotateX(180deg);
 }
@@ -186,7 +186,3 @@
     padding: 20px 20px;
 }
 
-.flip-box-back h1 ,
-.flip-box-x-back h1{
-    
-}
