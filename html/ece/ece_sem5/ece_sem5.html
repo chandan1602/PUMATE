@@ -1,96 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>
-            Home
-        </title>
-        <link rel="stylesheet" href="../../../css/stylehome.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<head>
+    <title>
+        Home
+    </title>
+    <link rel="stylesheet" href="../../../css/stylehome.css">
+    <link rel="stylesheet" href="./../../../css/face_slider.css">
+    <link rel="stylesheet" href="./../../../css/inner_home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta charset="UTF-8">
- 
+    <!-- Hotjar Tracking Code for pumate.ml -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 1401600,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
 </head>
 
-    <body>
+<body>
 
-<!--Navbar Starts-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="../../../index.html">PUMATE</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    <!--Navbar Starts-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../../../index.html">
+            <img style="max-width:70px; margin-top: -7px;" src="./../../../img/logo2.png"> PUMATE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse">
-        <ul class="nav">
-            <li class="nav-item">
-                <a href="./Quick_Access.html" class="nav-link">QUICK ACCESS</a>
-            </li>
-        </ul>
-    </div>
-    
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-        <ul class="nav">
-                        <li class="nav-item active">
-                                <a class="nav-link" href="./ece_sem5.html">HOME <span class="sr-only">(current)</span></a>
-                            </li>
+        <div class="collapse navbar-collapse">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="./Quick_Access.html" class="nav-link">QUICK ACCESS</a>
+                </li>
+            </ul>
+        </div>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                ACADEMICS
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="./qp_ece_sem5.html#pu_ques_papers">Question Papers</a>
-                                <a class="dropdown-item" href="./qp_ece_sem5.html#pu_syllabus">Syllabus</a>
-                                <a class="dropdown-item" href="./qp_ece_sem5.html#pu_workshops">Workshop Content</a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./ece_sem5.html">HOME <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ACADEMICS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="./qp_cse_sem1.html#pu_ques_papers">Question Papers</a>
+                        <a class="dropdown-item" href="./qp_cse_sem1.html#pu_syllabus">Syllabus</a>
+                        <a class="dropdown-item" href="./qp_cse_sem1.html#pu_workshops">Workshop Content</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./donate.html">DONATE</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        MORE
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="http://ssgpurch.puchd.ac.in/show-faculty.php"
+                            target="_blank">Faculty</a>
+                        <a class="dropdown-item" href="./pu_commities.html">Commities</a>
+                        <a class="dropdown-item" href="./pu_enterpreneurs.html">Enterpreneurs</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pu_gallery.html">GALLERY</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Navbar ends -->
+
+
+    <!--body starts-->
+
+    <section class="pu_pride">
+        <div class="container">
+            <br>
+            <h1>PU #PRIDE</h1>
+            <hr align="left" width="50%">
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="jumbotron pu_emblem">
+                        <h1 style="text-align:center">THE EMBLEM</h1>
+                        <img src="./../../../img/pu_emblem.jpg" alt="PU EMBLEM">
+                    </div>
+                    <!--jumbo ends-->
+                </div>
+                <!--first grid ends-->
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="jumbotron pu_anthem">
+                        <h1>THE ANTHEM</h1>
+                        <video controls>
+                            <source src="./../../../video/pu_anthem.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <!--jumbo ends-->
+                </div>
+                <!--second gird ends-->
+                <!--first row ends-->
+
+                <div class="col-lg-6 col-sm-12 col-md-6">
+                    <div class="jumbotron pu_event">
+                        <h1>ABOUT THE CAMPUS</h1>
+                        <p>Dr Lajpat Rai Munger, a US citizen and the owner of largest blueberry farms in the world, who
+                            originally belonged to the village of Nangal Shahidan Hoshiarpur, adopted Swami Sarvanand
+                            Giri Maharaj as his guru, he bought 20 acres of property in the name of his guruji in
+                            Bajwara village on Una Road, 5 km from the court of Hoshiarpur and constructed a campus.
+                            Later[when?], he handed it over to Panjab University. In February 2006, the campus became
+                            the Regional Centre of Panjab University.</p>
+                    </div>
+                    <!--jumbo ends-->
+                </div>
+                <!--first grid ends-->
+            </div>
+            <!--second row ends-->
+        </div>
+        <!--this section container ends-->
+    </section>
+    <!--pu_pride section ends-->
+
+
+    <section class="upcoming_events">
+        <br>
+        <div class="container">
+            <h1 style="color:#fff;">UPCOMING EVENTS</h1>
+            <hr align="left" width="50%">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="./../../../img/technnovation.jpg" alter="Technnovation">
                             </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="./chat_ece_sem5.html">TECH-CHAT</a>
-                        </li>
-            
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                MORE
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="./pu_faculty.html">Faculty</a>
-                                <a class="dropdown-item" href="./pu_commities.html">Commities</a>
-                                <a class="dropdown-item" href="./pu_enterpreneurs.html">Enterpreneurs</a>
+                            <div class="flip-box-back">
+                                <h2>TECHNNOVATION</h2>
+                                <div class="content">
+                                <p>The distance between your dream and your accomplishments is your mindset.<br>The students of Panjab University SSG Regional Centre to promote
+                                     a conglomeration of innovative thoughts and budding ideas have taken the innitiative to conduct a liberated technical fest for the first time.
+                                      we aim at providing a platform, where students will learn and grow, where thoughts will have no boundries and nobody will be relucant to ask.
+                                       A platform where we will all learn and rise together.</p>
+                                       </div>
+                                    
                             </div>
-                        </li>
+                        </div>
+                    </div>
+                </div>
+                <!--first grid ends-->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="./../../../img/openMic.jpg" alter="Open Mic">
+                            </div>
+                            <div class="flip-box-back">
+                                <h2>OPEN MIC</h2>
+                                <div class="content">
+                                    <p>Literati the official Literary Club of PUSSGRC presents the Open Mic Episodes that includes fun events like 
+                                        Shayari, Stand-Up-Comedy, Poetry, Story Telling, Singing and Rap and so on. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--second grid ends-->
+            </div>
+            <!--third row ends-->
+            <br>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="flip-box-x">
+                        <div class="flip-box-x-inner">
+                            <div class="flip-box-front">
+                                <img src="./../../../img/janmashtmi.jpg" alter="Janmashtmi">
+                            </div>
+                            <div class="flip-box-x-back">
+                                <h2>JANMASHTMI</h2>
+                                <div class="content">
+                                    <p>Krishna Janmashtami, also known simply as Janmashtami or Gokulashtami, is an
+                                        annual Hindu festival that celebrates the birth of Krishna, the eighth avatar of
+                                        Vishnu. It is celebrated in a very exciting way in Panjab University SSG Regional Centre and events like Dahi Handi, Langar, etc. takes place</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--first grid ends-->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="flip-box-x">
+                        <div class="flip-box-x-inner">
+                            <div class="flip-box-front">
+                                <img src="./../../../img/workshops.jpg" alter="Workshops">
+                            </div>
+                            <div class="flip-box-x-back">
+                                <h2>WORKSHOPS</h2>
+                                <div class="content">
+                                    <p>Technical Workshops are held every year in Panjab University SSG Regional Centre like Big Data and Hadoop, Cyber Security, Adobe Photoshop, Git and Github some of which are held officialy and some by college technical groups and even non technical workshops like Soft Skills are held.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--second grid ends-->
+                <!--fourth row ends-->
+
+            </div>
+            <!--2 rows ends in this section-->
+        </div>
+        <!--container div ends-->
 
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pu_gallery.html">GALLERY</a>
-                        </li>
-        </ul>
-    </div>
-</nav>
+    </section>
+    <!--upcoming_events section ends-->
 
-<!-- Navbar ends -->
+    <section class="older_events">
+        <div class="container">
+            <br>
+            <h1>OLDER EVENTS</h1>
+            <hr align="left" width="50%">
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm12">
+
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="./../../../img/anant.jpg" alter="AnantFest">
+                            </div>
+                            <div class="flip-box-back">
+                                <h2>ANANT FEST</h2>
+                                <div class="content">
+                                    <p>Anant is the annual techno-cultural extravaganza of PUSSGRC, Hoshiarpur.
+                                        A blend of art, technology and culture.
+                                        The inception of Anant dates back to year 2009, aiming to attract budding
+                                        talents throughout the country to participate in technical, cultural & literary
+                                        events where they come, compete, revel and enjoy!!!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--first grid ends-->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img src="./../../../img/internationalConference.jpg" alter="International Conference">
+                            </div>
+                            <div class="flip-box-back">
+                                <h2>INTERNATIONAL CONFERENCE</h2>
+                                <div class="content">
+                                    <p>CONFERENCE PUSSGRC & SONINfE are 3rd Intanational Confa•ence on AdvancemenG and
+                                        Trends in Mechanical and Mata-ials Engineering (AFIWWIE). "Ihis Confaence is a
+                                        three-day event that takes place evety year. This year it will uke place fiorn
+                                        Thursday 15th Nov, 2018 to Sanu•day 1 m Nov, 2018. This conference is a platform
+                                        to of concepts of Mataial Science and Mechanical Enginea•ing. This conference
+                                        offers many opportunities for developing professional and is a great networking
+                                        event. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--second grid ends-->
+            </div>
+            <!--fifth row ends-->
+            <br>
 
 
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+
+                    <div class="flip-box-x">
+                        <div class="flip-box-x-inner">
+                            <div class="flip-box-front">
+                                <img src="./../../../img/sportsday.jpg" alter="Sports Day">
+                            </div>
+                            <div class="flip-box-x-back">
+                                <h2>SPORTS DAY</h2>
+                                <div class="content">
+                                    <p>Sports day was held at Panjab University SSG Regional Centre from 13th to 15th march, 2019.
+                                        There were a huge variety of sports that were played including football, cricket, badminton, table tennis, chess, etc.
+                                        Refreshments were made available for all the participants. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--first grid ends-->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+
+                    <div class="flip-box-x">
+                        <div class="flip-box-x-inner">
+                            <div class="flip-box-front">
+                                <img src="./../../../img/YogaDay.jpg" alter="International Yoga Day">
+                            </div>
+                            <div class="flip-box-x-back">
+                                <h2>INTERNATIONAL YOGA DAY</h2>
+                                <div class="content">
+                                    <p>Yoga is Like Music.<br>
+                                        The Rhythm of the Body,<br>
+                                        The Melody of the Mind and<br>
+                                        Harmony of the Soul Creates the Symphony of Life.<br>
+                                        !!Have a Good and Healthy World Yoga Day with us !!
+                                        Platform tech solutions celebrating the international yoga day to enhance the
+                                        integrity of soul.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--second grid ends-->
+                </div>
+                <!--sixth row ends-->
+            </div>
+            <!--2 row ends in this section ends-->
+        </div>
+        <!--this section container ends-->
+    </section>
+    <!--older_events section ends-->
 
 
-<!--Footer-->
-      <footer>
-          Copyright &copy; 2019 PUMATE Productions
-      </footer>
-<!--Footer Ends-->
+    <section class="pu_alumini">
+        <div class="container">
+            <br>
+            <h1 style="color:#fff;">THE ALUMINI</h1>
+            <hr align="left" width="50%" style="color: #fff;">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm12">
+                    <div class="jumbotron pu_event">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <img src="./../../../img/ece_al1.jpg" width="200px;" height="250px;" alt="Manish Gaur">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <h3>Manish Gaur</h3>
+                                <ul>
+                                    <li>A 2007-2011 Batch Passout</li>
+                                    <li>Works at Intel Corporation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--jumbo ends-->
+                </div>
+                <!--first grid ends-->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="jumbotron pu_event">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <img src="./../../../img/ece_al2.jpg" width="200px;" height="250px;" alt="Priyanka Srivastava">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <h3>Priyanka Srivastava</h3>
+                                <ul>
+                                    <li>A 2010-2014 Batch Passout</li>
+                                    <li>Works at Nasa</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--jumbo ends-->
+                </div>
+                <!--second grid ends-->
+                <!--seventh row ends-->
 
- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
- </script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
-     integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
- </script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
-     integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous">
- </script>
-    </body>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="jumbotron pu_event">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <img src="./../../../img/ece_al3.jpg" width="200px;" height="250px;" alt="Saloni Rajpal">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <h3>Saloni Rajpal</h3>
+                                <ul>
+                                    <li>A 2010-2014 Batch Passout</li>
+                                    <li>Works at Delloite USI</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--jumbo ends-->
+                </div>
+                <!--first grid ends-->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="jumbotron pu_event">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <img src="./../../../img/cse_al4.jpg" width="200px;" height="250px;" alt="Hina Jaiswal">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <h3>Hina Jaiswal</h3>
+                                <ul>
+                                    <li>Hina, an alumini of UIETH is the first flight engineer inducted by the Indian Air Force</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--jumbo ends-->
+                </div>
+                <!--second grid ends-->
+                <!--eight row ends-->
+            </div>
+            <!--2 row ends in this section-->
+
+        </div>
+        <!--this section container ends-->
+    </section>
+    <!--pu_alumini section ends-->
+
+
+    <section class="image_gallery">
+        <div class="container">
+            <h1>THANKYOU DONATORS</h1>
+            <hr align="left" width="50%">
+
+            <section class="testimonial text-center">
+
+
+                <div class="heading white-heading">
+                </div>
+                <div id="testimonial4"
+                    class="carousel slide testimonial4_indicators testimonial4_cont                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   rol_button thumb_scroll_x swipe_x"
+                    data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="testimonial4_slide">
+                                <img src="./../../../img/donor1.jpg" class="img-circle img-responsive" />
+
+                                <h4>Gaurav Anand</h4>
+                                <p> <a class="btn btn-lg btn-success" onclick="targetDonate()">Donate
+                                        Now</a></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial4_slide">
+                                <img src="./../../../img/donor2.jpg" class="img-circle img-responsive" />
+                                <h4>Akshay Krity</h4>
+                                <p> <a href="./Quick_Access.html#PU_Donate" class="btn btn-lg btn-success">Donate
+                                        Now</a></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial4_slide">
+                                <img src="./../../../img/donor3.jpg" class="img-circle img-responsive" />
+
+                                <h4>Chandan Bansal</h4>
+                                <p> <a href="./Quick_Access.html#PU_Donate" class="btn btn-lg btn-success">Donate
+                                        Now</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+
+            </section>
+
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API = Tawk_API || {},
+                Tawk_LoadStart = new Date();
+            (function () {
+                var s1 = document.createElement("script"),
+                    s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/5d3d8cd29b94cd38bbe9afc5/default';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+        </script>
+        <!--End of Tawk.to Script-->
+        </div>
+        <!--container ends-->
+    </section>
+    <!--image gallery ends-->
+
+    <!--body ends-->
+
+
+    <!--Footer-->
+    <footer>
+        Copyright &copy; 2019 PUMATE Productions
+    </footer>
+    <!--Footer Ends-->
+
+    <script type="text/javascript" src="./../../../js/clickonchoose.js"></script>
+    <script type="text/javascript">
+    targetDonate = () => {
+    window.location.href="./donate.html";
+    DonateFunctionality();
+
+    }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous">
+    </script>
+    <!--################################FOR CURTAIN EFFECT############################################################-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')
+    </script>
+    <script src="./../../../js/index.js"></script>
+</body>
 
 </html>
